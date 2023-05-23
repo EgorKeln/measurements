@@ -1,0 +1,44 @@
+.main-advantagesWrapper,
+.main-orientationWrapper,
+.main-whyWrapper,
+.main-schemeWrapper,
+.main-whatgetsWrapper,
+.main-pricesWrapper,
+.main-workflowWrapper,
+.main-reviewsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 80px 5px 5px 5px;
+}
+
+.main-advantages-block,
+.main-orientation-block,
+.main-why-block,
+.main-scheme-block,
+.main-whatgets-block,
+.main-prices-block,
+.main-workflow-block,
+.main-reviews-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  /*background: var(--bg1);*/
+  /*box-shadow: var(--chadowcontent);*/
+}
