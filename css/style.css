@@ -533,11 +533,11 @@ main {
 @media (max-width: 913px) {
   .main-orientationWrapper {
     overflow: hidden;
-    border: 3px solid red;
+    /* border: 3px solid red;*/
   }
   .orientation__h1 {
     font-size: 35px;
-    border: 3px solid #f0f801;
+    /* border: 3px solid #f0f801;*/
     padding: 80px 0 0 0;
     margin: 0;
   }
@@ -546,10 +546,10 @@ main {
   }
   .orientation {
     margin: 0;
-    border: 3px solid #06d7ef;
+    /*border: 3px solid #06d7ef;*/
   }
   .orientation__h2 {
-    border: 3px solid #0d3eed;
+    /*border: 3px solid #0d3eed;*/
     font-size: 50px;
     margin: 50px 0 0 0;
   }
@@ -574,13 +574,13 @@ main {
   }
   .orientation__text {
     font-size: 24px;
-    border: 3px solid #dc0f68;
+    /*border: 3px solid #dc0f68;*/
     width: 100%;
     margin: 0;
   }
   .orientation__text1 {
     text-align: center;
-    border: 3px solid #82f606;
+    /*border: 3px solid #82f606;*/
   }
 }
 .main-whyWrapper {
@@ -755,12 +755,12 @@ main {
 @media (max-width: 913px) {
   .main-whyWrapper {
     overflow: hidden;
-    border: 3px solid #f80501;
+    /*border: 3px solid #f80501;*/
   }
   .why__h1 {
     font-size: 35px;
-    border: 3px solid #f0f801;
-    padding: 80px 0 0 0;
+    /* border: 3px solid #f0f801;*/
+    padding: 0;
   }
   .why__h1 span {
     font-size: 65px;
@@ -779,7 +779,7 @@ main {
     width: 100%;
     text-align: center;
     margin: 0;
-    border: 3px solid #f17d0a;
+    /* border: 3px solid #f17d0a;*/
   }
   .why__text2 span {
     font-family: "Caveat", cursive;
@@ -790,24 +790,24 @@ main {
     width: 95%;
     font-size: 24px;
     margin: 0;
-    border: 3px solid #db11bd;
+    /*border: 3px solid #db11bd;*/
   }
   .why {
     width: 100%;
-    border: 3px solid #06d7ef;
+    /*border: 3px solid #06d7ef;*/
     margin: 10px 0;
   }
   .why__text {
     width: 90%;
     text-align: center;
     margin: 15px 0 0 0;
-    border: 3px solid #1310e1;
+    /*border: 3px solid #1310e1;*/
   }
   .why__text1 {
     text-align: center;
     font-size: 24px;
     margin: 15px 0 0 0;
-    border: 3px solid #ccafaf;
+    /*border: 3px solid #ccafaf;*/
   }
   .why__img {
     width: 100%;
@@ -825,14 +825,14 @@ main {
   }
 }
 .main-advantagesWrapper {
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
 }
 
 .main-advantages-block {
-  border: 3px solid #0ddc25;
+  /*border: 3px solid #0ddc25;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -852,7 +852,7 @@ main {
   font-size: 55px;
   font-family: "Raleway", sans-serif;
   color: var(--bg3);
-  border: 3px solid #f0f801;
+  /*border: 3px solid #f0f801;*/
   margin: 80px 0 5px 0;
   /*background-color: var(--bg);
   border-radius: 20px;
@@ -879,11 +879,11 @@ main {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100%;
-  width: 49%;
+  min-height: 400px;
+  width: 24%;
   margin: 5px;
   color: var(--bgtext);
-  border: 3px solid #06d7ef;
+  /*border: 3px solid #06d7ef;*/
   /*background-color: var(--bg);
   border-radius: 20px;
   border: 4px solid var(--bg4);
@@ -906,7 +906,7 @@ main {
   border: 8px solid var(--bg5);
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
           box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-  width: 45%;
+  width: 80%;
   margin: 15px 0;
   padding: 15px;
 }
@@ -926,17 +926,37 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Raleway", sans-serif;
-  border: 3px solid #0d3eed;
+  /*border: 3px solid #0d3eed;*/
   height: 100%;
-  width: 50%;
-  font-size: 40px;
+  width: 80%;
+  font-size: 30px;
   color: var(--bg3);
-  margin: 40px 0 5px 0;
+  margin: 20px 0 5px 0;
 }
 
 @media (max-width: 913px) {
   .main-advantagesWrapper {
     overflow-x: hidden;
+  }
+  .advantages__h1 {
+    font-size: 35px;
+    /*border: 3px solid #f0f801;*/
+    padding: 80px 0 0 0;
+    margin: 0;
+  }
+  .advantages__h1 span {
+    font-size: 40px;
+  }
+  .advantages {
+    min-height: 400px;
+    width: 100%;
+    margin: 5px;
+    color: var(--bgtext);
+    /*border: 3px solid #06d7ef;*/
+    /*background-color: var(--bg);
+    border-radius: 20px;
+    border: 4px solid var(--bg4);
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.35),inset -5px -5px 15px rgba(255,255,255,0.1), inset 5px 5px 15px rgba(0,0,0,0.35);*/
   }
 }
 .main-schemeWrapper {
