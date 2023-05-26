@@ -275,37 +275,37 @@ header ul li ul li ul {
 
 .fullscreen_one {
   background-color: var(--bg5);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_two {
   background-color: var(--bg4);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_three {
   background-color: var(--bg5);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_four {
   background-color: var(--bg4);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_five {
   background-color: var(--bg5);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_six {
   background-color: var(--bg4);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_seven {
   background-color: var(--bg5);
-  background-image: url("../../img/bg/bg6.png");
+  background-image: url("../img/bg/bg6.png");
 }
 
 .fullscreen_body {
@@ -487,7 +487,7 @@ main {
   width: auto;
   font-size: var(--sizeh2);
   color: var(--bg3);
-  margin: 40px 0 5px 0;
+  margin: 40px 0 0 0;
   padding: 5px 15px;
   background-color: var(--bg);
   border-radius: 20px;
@@ -580,12 +580,17 @@ main {
     overflow: hidden;
     /*border: 3px solid red;*/
     padding: 80px 0 0 0;
+    margin: 0;
+  }
+  .main-orientation-block {
+    /*border: 3px solid #0ddc25;*/
   }
   .orientation__h1 {
     font-size: 35px;
     width: 90%;
     /*border: 3px solid #f0f801;*/
     margin: 0;
+    padding: 0;
   }
   .orientation__h1 span {
     font-size: 60px;
@@ -597,15 +602,19 @@ main {
   .orientation__h2 {
     /*border: 3px solid #0d3eed;*/
     font-size: 50px;
-    width: 80%;
-    margin: 50px 0 0 0;
+    width: 75%;
+    margin: 20px 0 0 0;
+    padding: 0;
   }
   .orientation__h2 span {
     color: red;
     font-size: 60px;
   }
   .orientation__img {
-    width: 65%;
+    width: 55%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    /*border: 3px solid #0d3eed;*/
   }
   .block2,
 .block4 {
@@ -623,7 +632,8 @@ main {
     font-size: var(--sizetextmini);
     width: 90%;
     /*border: 3px solid #dc0f68;*/
-    margin: 0;
+    margin: 20px 0 0 0;
+    padding: 10px;
   }
   .orientation-last {
     margin: 0 0 20px 0;
