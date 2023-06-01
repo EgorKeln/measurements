@@ -991,9 +991,6 @@ footer {
   /*background-color: var(--bg);*/
   border-radius: 20px;
   border: 6px solid var(--bg3);
-  /*box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.35),inset -5px -5px 15px rgba(255,255,255,0.1), inset 5px 5px 15px rgba(0,0,0,0.35);*/
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(251, 251, 251, 0.71);
-          box-shadow: 0px 0px 100px -11px rgba(251, 251, 251, 0.71);
   width: 30%;
   padding: 5px;
   margin: 0;
@@ -1003,11 +1000,30 @@ footer {
   max-width: 100%;
 }
 
-.block2,
+.block1 {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 95, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(57, 95, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
+.block2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 57, 177, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(201, 57, 177, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
+.block3 {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 179, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(201, 179, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
 .block4 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(115, 201, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(115, 201, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
 }
 
 .orientation__text {
@@ -1383,14 +1399,32 @@ footer {
   width: 70%;
   border-radius: 20px;
   border: 6px solid var(--bg3);
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(251, 251, 251, 0.71);
-          box-shadow: 0px 0px 100px -11px rgba(251, 251, 251, 0.71);
   padding: 5px;
   margin: 0;
 }
 
 .advantages__img img {
   max-width: 100%;
+}
+
+.shadowClock {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
+.shadowMap {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
+.shadowDesign {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+}
+
+.shadowFoto {
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+          box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
 }
 
 .advantages__text {
