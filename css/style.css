@@ -528,10 +528,10 @@ section .section-heading {
   position: sticky;
   top: 60px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  /*box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: whitesmoke;
-  background-color: var(--bg3);*/
+  /*background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: whitesmoke;*/
+  background-color: rgba(51, 51, 51, 0.1019607843);
   z-index: 9996;
 }
 
@@ -907,7 +907,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100%;
-  width: 75%;
+  width: 100%;
   padding: 5px;
   margin: 0;
   color: var(--bgtext);
@@ -921,6 +921,7 @@ footer {
 .orientation-1 {
   /*min-width: 250px;
   border: 3px solid #06d7ef;*/
+  display: none;
 }
 
 .orientation__h2 {
@@ -935,16 +936,16 @@ footer {
           align-items: center;
   font-family: var(--font-family1);
   /*border: 3px solid #0d3eed;*/
-  border-bottom: 1px solid #333;
   height: 100%;
   width: 80%;
   font-size: var(--sizeh2);
-  color: var(--bg3);
+  color: var(--bg);
   padding: 15px;
   margin: 15px 0 0 0;
-  background-color: var(--bg);
-  border-radius: 20px;
-  border: 4px solid var(--bg5);
+  /*background-color: var(--bg);*/
+  background-color: transparent;
+  border: 8px solid var(--bg3);
+  border-radius: 0 70px;
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
           box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
 }
@@ -990,9 +991,8 @@ footer {
   /*border: 3px solid #e206f2;*/
   /*background-color: var(--bg);*/
   border-radius: 20px;
-  border: 6px solid var(--bg3);
   width: 30%;
-  padding: 5px;
+  padding: 15px;
   margin: 0;
 }
 
@@ -1039,7 +1039,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: var(--font-family2);
-  color: var(--bg3);
+  color: var(--bg);
   font-size: var(--sizetext);
   /*border: 3px solid #dc0f68;*/
   background-color: transparent;
@@ -1057,17 +1057,24 @@ footer {
 }
 
 .orientation-border li {
-  background-color: var(--bg);
+  /*background-color: var(--bg);*/
   font-family: "Trebuchet MS", "Lucida Sans";
-  padding: 10px 20px;
+  padding: 20px 30px;
   margin-bottom: 10px;
   border-radius: 10px;
-  border: 4px solid var(--bg5);
+  background-color: transparent;
+  border: 4px solid var(--bg3);
+  border-radius: 10px;
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
   font-size: 20px;
   letter-spacing: 1px;
   text-align: left;
+}
+
+.orientation-last {
+  padding: 5px;
+  margin: 0 0 100px 0;
 }
 
 @media (max-width: 913px) {
@@ -1097,10 +1104,11 @@ footer {
     width: 100%;
     max-width: 360px;
     padding: 5px;
-    margin: 0;
-    background-color: var(--bg);
-    border-radius: 20px;
-    border: 4px solid var(--bg5);
+    margin: 30px 0;
+    color: var(--bg);
+    background-color: transparent;
+    border: 8px solid var(--bg3);
+    border-radius: 0 70px;
     -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
             box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
   }
@@ -1190,7 +1198,7 @@ footer {
   height: 100%;
   width: 70%;
   padding: 5px;
-  margin: 0;
+  margin: 0 0 100px 0;
   /*border: 3px solid #06d7ef;*/
 }
 
@@ -1243,15 +1251,17 @@ footer {
 }
 
 .why-border li {
-  color: var(--bg3);
-  background-color: var(--bg);
+  /*color: var(--bg3);
+  background-color: var(--bg);*/
   font-family: "Trebuchet MS", "Lucida Sans";
-  padding: 10px 20px;
+  padding: 20px 30px;
   margin-bottom: 10px;
+  color: var(--bg);
+  background-color: transparent;
+  border: 4px solid var(--bg3);
   border-radius: 10px;
-  border: 4px solid var(--bg5);
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
   font-size: 20px;
   letter-spacing: 1px;
   text-align: left;
@@ -1288,22 +1298,22 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--bg);
   min-height: 170px;
   width: 90%;
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans";
-  color: var(--bg3);
   padding: 7px 30px;
   margin-bottom: 10px;
   letter-spacing: 1px;
   text-align: left;
-  /*border: 3px solid #db11bd;*/
-  background-color: var(--bg);
+  /*border: 3px solid #db11bd;
+  background-color: var(--bg);*/
+  color: var(--bg);
+  background-color: transparent;
+  border: 4px solid var(--bg3);
   border-radius: 10px;
-  border: 4px solid var(--bg5);
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
 }
 
 .why__text2 span {
@@ -1360,7 +1370,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
-  margin: 80px 0 0 0;
+  margin: 50px 0 50px 0;
   gap: 15px;
 }
 
@@ -1408,23 +1418,23 @@ footer {
 }
 
 .shadowClock {
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
-          box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71);
+          box-shadow: 0px 0px 100px -11px rgba(201, 175, 57, 0.71);
 }
 
 .shadowMap {
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
-          box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71);
+          box-shadow: 0px 0px 100px -11px rgba(57, 201, 117, 0.71);
 }
 
 .shadowDesign {
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
-          box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71);
+          box-shadow: 0px 0px 100px -11px rgba(57, 103, 201, 0.71);
 }
 
 .shadowFoto {
-  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
-          box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71), 4px 4px 100px 100px rgba(255, 255, 255, 0.13);
+  -webkit-box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71);
+          box-shadow: 0px 0px 100px -11px rgba(201, 57, 88, 0.71);
 }
 
 .advantages__text {
@@ -1437,16 +1447,18 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 120px;
-  color: var(--bg3);
-  background-color: var(--bg);
+  min-height: 150px;
+  /*color: var(--bg3);
+  background-color: var(--bg);*/
   font-family: "Trebuchet MS", "Lucida Sans";
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  padding: 20px 30px;
+  margin: 30px 10px 30px 10px;
+  color: var(--bg);
+  background-color: transparent;
+  border: 4px solid var(--bg3);
   border-radius: 10px;
-  border: 4px solid var(--bg5);
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -1464,14 +1476,29 @@ footer {
     margin: 60px 0 0 0;
   }
   .advantages {
-    width: 100%;
+    width: 95%;
+    gap: 0px;
+    background-color: transparent;
+    border: 4px solid var(--bg3);
+    border-radius: 10px;
+    -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
   }
   .advantages__img {
-    height: 60%;
-    width: 60%;
+    height: 55%;
+    width: 55%;
+    padding: 5px;
+    margin: 30px 0 0 0;
   }
   .advantages__text {
     width: 90%;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
+    font-size: 25px;
+    text-align: center;
   }
 }
 .main-schemeWrapper {
