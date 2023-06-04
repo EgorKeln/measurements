@@ -984,19 +984,19 @@ footer {
 }
 
 .orientation-spanblock1 {
-  color: rgba(57, 95, 201, 0.71);
+  color: #395fc9;
 }
 
 .orientation-spanblock2 {
-  color: rgba(201, 57, 177, 0.71);
+  color: #c939b1;
 }
 
 .orientation-spanblock3 {
-  color: rgba(231, 199, 15, 0.71);
+  color: #e7c733;
 }
 
 .orientation-spanblock4 {
-  color: rgba(43, 209, 65, 0.71);
+  color: #2bd141;
 }
 
 .orientation__block1,
@@ -1931,7 +1931,7 @@ footer {
 
 .scheme-last {
   padding: 5px;
-  margin: 40px 0 100px 0;
+  margin: 40px 0 60px 0;
 }
 
 @media (max-width: 913px) {
@@ -1981,14 +1981,15 @@ footer {
   }
 }
 .main-pricesWrapper {
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
+  margin: 0;
 }
 
 .main-pricesBig-block {
-  border: 3px solid #dcd90d;
+  /*border: 3px solid #dcd90d;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2002,21 +2003,56 @@ footer {
       flex-wrap: wrap;
   width: 100%;
   padding: 5px;
-  margin: 80px 0 0 0;
-  gap: 8px;
+  margin: 100px 0 0 0;
+  gap: 0 50px;
 }
 
+.main-pricesBig-block h2 {
+  width: 80%;
+  margin: 0 0 50px 0;
+}
+
+.main-pricesBig-block__h2 {
+  font-size: var(--sizeh1);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(201, 57, 177, 0.71)), color-stop(70%, rgba(201, 57, 177, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
+  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(201, 57, 177, 0.71) 30%, rgba(201, 57, 177, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  -webkit-animation: prices 5s ease-in-out infinite alternate;
+          animation: prices 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes prices {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes prices {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 .main-prices-block {
-  border: 3px solid #0ddc25;
+  /*border: 3px solid #0ddc25;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 100px 0;
 }
 
 .prices-card {
-  width: 350px;
-  height: 500px;
+  width: 320px;
+  height: 470px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   /*border: 3px solid #3a0ddc;
@@ -2036,12 +2072,11 @@ footer {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  border: 3px solid #dc820d;
+  /*border: 3px solid #dc820d;*/
   border-radius: 20px;
-  background-color: var(--bg);
-  border: 4px solid var(--bg5);
+  border: 8px solid var(--bg3);
   -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35); /**/
 }
 
 .card-front,
@@ -2060,6 +2095,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -2072,11 +2109,11 @@ footer {
 }
 
 .card-front {
-  background-color: var(--bg);
+  background-color: transparent;
 }
 
 .card-back {
-  background-color: var(--bg);
+  background-color: transparent;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -2098,20 +2135,31 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   padding: 10px;
-  margin: 10px 0 0 0;
-  border: 3px solid #a32788;
+  margin: 20px 0 0 0;
+  background-color: transparent;
   border-radius: 20px;
-  background-color: var(--bg);
-  border: 4px solid var(--bg5);
-  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .cardFront-img img {
   max-width: 100%;
+}
+
+.cardFront__img1 {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(57, 95, 201, 0.71);
+          box-shadow: 0px 0px 10px 5px rgba(57, 95, 201, 0.71);
+}
+
+.cardFront__img2 {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(115, 201, 57, 0.71);
+          box-shadow: 0px 0px 10px 5px rgba(115, 201, 57, 0.71);
+}
+
+.cardFront__img3 {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(201, 179, 57, 0.71);
+          box-shadow: 0px 0px 10px 5px rgba(201, 179, 57, 0.71);
 }
 
 .cardFront-h2 {
@@ -2125,17 +2173,25 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   font-family: var(--font-family1);
-  border: 3px solid #0d3eed;
+  /*border: 3px solid #0d3eed;*/
   width: 100%;
   height: 10%;
-  font-size: var(--sizeh1-1);
-  color: var(--bg3);
+  font-size: 35px;
+  color: var(--bg);
   padding: 5px;
   margin: 0;
 }
 
-.cardFront-h2 span {
-  color: red;
+.cardFront__h2-1 {
+  color: #395fc9;
+}
+
+.cardFront__h2-2 {
+  color: #2bd141;
+}
+
+.cardFront__h2-3 {
+  color: #e7c733;
 }
 
 .cardFront-text {
@@ -2151,9 +2207,9 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: var(--font-family2);
-  color: var(--bg3);
+  color: var(--bg);
   font-size: var(--sizetext);
-  border: 3px solid #dc0f68;
+  /*border: 3px solid #dc0f68;*/
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -2175,7 +2231,7 @@ footer {
   font-family: var(--font-family2);
   color: var(--bg3);
   font-size: var(--sizetext);
-  border: 3px solid #dc0f68;
+  /*border: 3px solid #dc0f68;*/
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -2195,23 +2251,19 @@ footer {
           align-items: center;
   width: 100%;
   height: 10%;
-  border: 3px solid #b6dc0f;
+  /*border: 3px solid #b6dc0f;*/
   padding: 5px;
   margin: 0;
 }
 
 .prices-ButtonFront span,
 .prices-ButtonBack span {
-  padding: 8px 15px;
-  background: #45f3ff;
+  padding: 4px 10px;
+  border: 2px solid #fff;
   font-family: var(--font-family2);
-  color: var(--bg3);
-  font-size: var(--sizetext);
+  color: var(--bg);
+  font-size: 18px;
   cursor: pointer;
-}
-
-.prices-ButtonBack span {
-  background: #ffbe45;
 }
 
 @media (max-width: 913px) {
@@ -2220,13 +2272,16 @@ footer {
     padding: 0;
     margin: 0;
   }
+  .main-pricesBig-block {
+    gap: 40px;
+  }
   .main-prices-block {
     padding: 0;
     margin: 0;
   }
   .prices-card {
-    width: 300px;
-    height: 450px;
+    width: 320px;
+    height: 470px;
   }
 }
 .footer-wrapper {
