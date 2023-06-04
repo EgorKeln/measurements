@@ -1433,11 +1433,11 @@ footer {
     overflow: hidden;
     height: 100%;
     max-width: 100%;
-    padding: 0;
+    padding: 5px;
     margin: 0;
   }
   .main-why-block {
-    padding: 0;
+    padding: 5px;
     margin: 60px 0 0 0;
   }
   .main-why-block__h2 {
@@ -1453,6 +1453,10 @@ footer {
             order: 1;
   }
   .why {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1644,11 +1648,11 @@ footer {
     overflow: hidden;
     height: 100%;
     max-width: 100%;
-    padding: 0;
+    padding: 5px;
     margin: 0;
   }
   .main-advantages-block {
-    padding: 0;
+    padding: 5px;
     margin: 60px 0 0 0;
   }
   .main-advantages-block__h2,
@@ -1656,7 +1660,10 @@ footer {
     font-size: 45px;
   }
   .advantages {
+    height: 100%;
     width: 100%;
+    padding: 5px;
+    margin: 0;
   }
   .advantages__img {
     height: 55%;
@@ -1917,7 +1924,7 @@ footer {
   padding: 20px 30px;
   margin-bottom: 10px;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   text-align: left;
 }
@@ -1930,15 +1937,16 @@ footer {
 @media (max-width: 913px) {
   .main-schemeWrapper {
     overflow: hidden;
-    padding: 0;
+    padding: 5px;
     margin: 0;
   }
   .main-scheme-block {
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 60px 0 0 0;
     gap: 30px;
   }
   .scheme {
+    height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
