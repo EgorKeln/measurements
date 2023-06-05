@@ -172,8 +172,8 @@ section {
 }
 
 section:nth-of-type(1) {
-  background-color: var(--bg3);
-  /*background-image: url("../img/bg/bg6.png");*/
+  /*background-color: var(--bg3);
+  background-image: url("../img/bg/bg6.png");*/
   -webkit-animation: backgrounder 30s linear infinite;
           animation: backgrounder 30s linear infinite;
 }
@@ -200,6 +200,13 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
+  background-color: var(--bg3);
+  /*background-image: url("../img/bg/bg6.png");*/
+  -webkit-animation: backgrounder 30s linear infinite;
+          animation: backgrounder 30s linear infinite;
+}
+
+section:nth-of-type(6) {
   background-color: var(--bg3);
   /*background-image: url("../img/bg/bg6.png");*/
   -webkit-animation: backgrounder 30s linear infinite;
@@ -708,6 +715,11 @@ header {
 
 .li a span {
   /*border: 3px solid #b1eb11;*/
+  font-family: "Trebuchet MS", "Lucida Sans";
+  padding: 0px 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -738,7 +750,8 @@ header {
     max-width: 100%;
   }
   .li a span {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 0px 10px;
   }
 }
 /*.navigation a:before {
@@ -955,21 +968,131 @@ header {
             transform: translateY(5px) rotate(0deg);
   }
 }
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #2bbaff;
+  /*background: var(--bg3);*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
 .main-oneWrapper {
-  /*border: 3px solid red;*/
+  /**/
+  border: 3px solid red;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
-  background-color: var(--bg3);
-  /*background-image: url("../img/bg/bg6.png");*/
 }
 
 .main-one-block {
-  /*border: 3px solid #0ddc25;*/
+  width: 100%;
+  height: 100%;
+  /**/
+  border: 3px solid #0ddc25;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
   margin: 0;
+  gap: 20px;
+}
+
+.one-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.one-block1 {
+  /**/
+  border: 3px solid #dc0d0d;
+  width: 69%;
+  height: 100%;
+}
+
+.one-block2 {
+  /**/
+  border: 3px solid #d9dc0d;
+  width: 29%;
+  height: 100%;
+}
+
+.one-h2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80%;
+  /**/
+  border: 3px solid #ac0ddc;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 5px;
+}
+
+.one-h2__span {
+  width: 80%;
+  height: 80%;
+  /**/
+  border: 3px solid #dc0d17;
+}
+
+.one-h2 span {
+  letter-spacing: 10px;
+  font-size: 90px;
+}
+
+.SkewedOne {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: var(--bg3);
+  -webkit-transform: skewY(-15deg);
+          transform: skewY(-15deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.SkewedTwo {
+  position: absolute;
+  bottom: -100%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  background: var(--bg3);
+  -webkit-transform: skewY(15deg);
+          transform: skewY(15deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 @media (max-width: 913px) {
@@ -979,8 +1102,41 @@ header {
     margin: 0;
   }
   .main-one-block {
+    width: 100%;
+    height: 80%;
     padding: 0;
     margin: 0;
+    /**/
+    border: 3px solid #0ddc25;
+  }
+  .one-block1 {
+    /**/
+    border: 3px solid #dc0d0d;
+    width: 100%;
+    height: 69%;
+  }
+  .one-block2 {
+    /**/
+    border: 3px solid #d9dc0d;
+    width: 100%;
+    height: 29%;
+  }
+  .one-h2 {
+    font-size: 20px;
+    width: 100%;
+    height: 98%;
+    /**/
+    border: 3px solid #ac0ddc;
+  }
+  .one-h2__span {
+    width: 100%;
+    height: 100%;
+    /**/
+    border: 3px solid #dc0d17;
+  }
+  .one-h2 span {
+    letter-spacing: 5px;
+    font-size: 40px;
   }
 }
 .main-orientationWrapper {
