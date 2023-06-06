@@ -46,6 +46,19 @@ close5.onclick = function(){
 
 
 
+let login = document.querySelector('.login');
+let create = document.querySelector('.create');
+let container = document.querySelector('.container');
+
+login.onclick = function(){
+    container.classList.add('signinForm')
+}
+create.onclick = function(){
+    container.classList.remove('signinForm')
+};
+
+
+
 const SkewedOne = document.querySelector('.SkewedOne');
 const SkewedTwo = document.querySelector('.SkewedTwo');
 window.addEventListener('scroll', function(){

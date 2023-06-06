@@ -8,6 +8,12 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- подключение AOS -->
 
+        <!-- подключение иконок для формы регистрации -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- подключение иконок для формы регистрации -->
+
         <!-- подключение стилей -->
         <link rel="stylesheet" href="./css/style.css" />
         <!-- подключение стилей -->
@@ -90,7 +96,54 @@
                 </div>
 
                 <div class="navigation-content">
-                    <span>content</span>
+
+                    <div class="container">
+                        <div class="form signup">
+                            <h2>Создать аккаунт</h2>
+                            <div class="inputBox">
+                                <input type="text" required="required">
+                                <i class="fa-regular fa-user"></i>
+                                <span>имя пользователя</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" required="required">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>адрес электронной почты</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" required="required">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>создайте пароль</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" required="required">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>подтвердите пароль</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Создать">
+                            </div>
+                            <p>Есть аккаунт? <a href="#" class="login">Авторизоваться</a></p>
+                        </div>
+                        <div class="form signin">
+                            <h2>Войти в аккаунт</h2>
+                            <div class="inputBox">
+                                <input type="text" required="required">
+                                <i class="fa-regular fa-user"></i>
+                                <span>имя пользователя</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" required="required">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>пароль</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Войти">
+                            </div>
+                            <p>Нет аккаунта? <a href="#" class="create">Создать аккаунт</a></p>
+                        </div>
+                    </div>
+                    
                 </div>
             </nav>
         </div>
