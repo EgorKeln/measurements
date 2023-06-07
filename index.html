@@ -37,8 +37,8 @@
     <div class="grid-x align-middle">
         <div class="cell small-11">
             <a class="logo" href="#one">
-                    <i class="fas fa-weight-hanging"></i>
                     <span>Size in Moscow.ru</span>
+                    <!--<i class="fas fa-weight-hanging"></i>-->
             </a>
         </div>
         <div class="cell nav-menu"><button class="hamburger"><span></span><span></span><span></span></button>
@@ -697,20 +697,77 @@
         </section>
         <div id="footer"></div>
         <footer>
-<div class="grid-container">
+<!--<div class="grid-container">
     <div class="grid-x">
+        <div class="cell">-->
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
         <div class="cell">
 
-
             <div class="footer-wrapper">
-                <!--<div class="footer__h1" data-aos="fade-up" data-aos-offset="150" data-aos-duration="1000">
-                    <div><span><span>К</span>онтакты</span></div>
-                </div>-->
                 <div class="footer-wrapper-block">
-                    <span>Контакты</span>
-                </div> 
-            </div>
 
+                    <div class="footer-block footer-block1">
+                        <span>Контакты</span>
+                    </div>
+
+                    <div class="footer-block footer-block2">
+                        <h2 class="contactForm-form__h2">Оставьте контактные данные, мы перезвоним и обсудим ваши задачи</h2>
+                        <div class="wrapper-contactForm">
+                            <form id="contact" action="../mail.php" method="post">
+                                <div id="note"></div>
+                                <div class="contactForm-container">
+                                    <div class="contactForm-form contactForm-signup">
+                                        <div class="contactForm-inputBox">
+                                            <input type="text" name="name" id="author" required>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span><label for="author">Ваше имя</label></span>
+                                        </div>
+                                        <div class="contactForm-inputBox">
+                                            <input type="email" name="email" id="email" required>
+                                            <i class="fa-solid fa-at"></i>
+                                            <span><label for="email">Электронная почта </label></span>
+                                        </div>
+                                        <div class="contactForm-inputBox">
+                                            <input type="tel" name="tel" id="url" required>
+                                            <i class="fa-solid fa-mobile"></i>
+                                            <span><label for="url">+7(___)___-__-__</label></span>
+                                        </div>
+                                        <div class="contactForm-inputBox">
+                                            <textarea name="message" cols="1" rows="10" id="comment" required></textarea>
+                                            <i class="fa-solid fa-message"></i>
+                                            <span>Адрес и доп. информация</span>
+                                        </div>
+                                        <div class="contactForm-checkbox">
+                                            <input checked type="checkbox" name="cbox" required/>
+                                            <span>Я согласен на обработку персональных данных и с
+                                            <a href="#">политикой конфиденциальности</a></span>
+                                        </div>
+                                        
+                                        <div class="contactForm-inputBox">
+                                            <input type="submit" id="submit" class="go" value="Свяжитесь со мной">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    
+                </div> 
+
+                <div class="footer-footer">
+                    <div>
+                        <span>© Все права защищены</span>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
 
         </div>
     </div>
