@@ -1,4 +1,4 @@
-<meta http-equiv='refresh' content='3; url=http://111atesttest-ru.1gb.ru/'></meta>
+<meta http-equiv='refresh' content='5; url=http://1111atesttes-ru.1gb.ru/'></meta>
 <?php
 $post = (!empty($_POST)) ? true : false;
 if($post) {
