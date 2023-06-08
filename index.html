@@ -120,6 +120,11 @@
                                 <i class="fa-solid fa-lock"></i>
                                 <span>подтвердите пароль</span>
                             </div>
+                            <div class="navigation-checkbox">
+                                <input checked type="checkbox" name="cbox" required/>
+                                <span>Я согласен на обработку персональных данных и с
+                                <a href="#">политикой конфиденциальности</a></span>
+                            </div>
                             <div class="inputBox">
                                 <input type="submit" value="Создать">
                             </div>
@@ -595,7 +600,7 @@
                                         <span class="cardFront__h2-1">С</span>тандарт
                                     </div>
                                     <div class="cardFront-text">
-                                        Замер одного или нескольких помещений для дизайн-проекта кухни, шкафа или другой корпустной мебели.
+                                        Замер одного помещения для дизайн-проекта кухни, шкафа или другой корпустной мебели.
                                     </div>
                                     <div class="prices-ButtonFront OpenOne">
                                         <span>Подробнее</span>
@@ -605,10 +610,10 @@
             
                                 <div class="card-back">
                                     <div class="cardBack-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius voluptas vitae fugit minus minima!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque fuga illo quam dolores cumque et facilis in labore minus repellat cum, distinctio quia saepe? Nemo quibusdam est dolor maiores!
                                     </div>
                                     <div class="prices-ButtonBack CloseOne">
-                                        <span>Закрыть</span>
+                                        <span><i class="fa-solid fa-rotate-left"></i></span>
                                     </div>
                                     
                                 </div>
@@ -630,7 +635,7 @@
                                         <span class="cardFront__h2-2">С</span>тандарт<span class="cardFront__h2-2">+</span>
                                     </div>
                                     <div class="cardFront-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius voluptas vitae fugit minus minima!
+                                        Замер нескольких помещений. Полный обмер квартиры, дома либо офиса.
                                     </div>
                                     <div class="prices-ButtonFront OpenTwo">
                                         <span>Подробнее</span>
@@ -640,10 +645,10 @@
             
                                 <div class="card-back">
                                     <div class="cardBack-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius voluptas vitae fugit minus minima!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque fuga illo quam dolores cumque et facilis in labore minus repellat cum, distinctio quia saepe? Nemo quibusdam est dolor maiores!
                                     </div>
                                     <div class="prices-ButtonBack CloseTwo">
-                                        <span>Закрыть</span>
+                                        <span><i class="fa-solid fa-rotate-left"></i></span>
                                     </div>
                                     
                                 </div>
@@ -664,7 +669,7 @@
                                         <span class="cardFront__h2-3">Б</span>изнес
                                     </div>
                                     <div class="cardFront-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius voluptas vitae fugit minus minima!
+                                        Вам некогода заниматься замерами и вы хотите делегировать их.
                                     </div>
                                     <div class="prices-ButtonFront OpenThree">
                                         <span>Подробнее</span>
@@ -674,10 +679,10 @@
             
                                 <div class="card-back">
                                     <div class="cardBack-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius voluptas vitae fugit minus minima!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque fuga illo quam dolores cumque et facilis in labore minus repellat cum, distinctio quia saepe? Nemo quibusdam est dolor maiores!
                                     </div>
                                     <div class="prices-ButtonBack CloseThree">
-                                        <span>Закрыть</span>
+                                        <span><i class="fa-solid fa-rotate-left"></i></span>
                                     </div>
                                     
                                 </div>
@@ -708,12 +713,43 @@
                 <div class="footer-wrapper-block">
 
                     <div class="footer-block footer-block1">
-                        <span>Контакты</span>
+                        <h2 class="footer-block__h2">Контактные данные</h2>
+                        <div class="wrapper-contactForm">
+
+                            <div class="contact-block contact-tel">
+                                
+                                <h3 class="contact-block__h3">Позвоните нам</h3>
+                                <i class="fa-solid fa-mobile"></i>
+                                <span>+7(987)654 32 10</span>
+                            </div>
+
+                            <div class="contact-block contact-mail">
+                                
+                                <h3 class="contact-block__h3">Напишите нам</h3>
+                                <i class="fa-solid fa-at"></i>
+                                <span>mail@narod.ru</span>
+                            </div>
+
+                            <div class="contact-block contact-mailb2b">
+                                
+                                <h3 class="contact-block__h3">Для бизнеса</h3>
+                                <i class="fa-sharp fa-solid fa-briefcase"></i>
+                                <span>b2bmail@narod.ru</span>
+                            </div>
+
+                            <div class="contact-block contact-telegram">
+                                
+                                <h3 class="contact-block__h3">Напишите нам</h3>
+                                <i class="fa-brands fa-telegram"></i>
+                                <span>telegram</span>
+                            </div>
+                            
+                        </div>
                     </div>
 
                     <div class="footer-block footer-block2">
                         <h2 class="contactForm-form__h2">Оставьте контактные данные, мы перезвоним и обсудим ваши задачи</h2>
-                        <div class="wrapper-contactForm">
+                        <div class="wrapper-contactForm2">
                             <form id="contact" action="../mail.php" method="post">
                                 <div id="note"></div>
                                 <div class="contactForm-container">
@@ -761,7 +797,7 @@
                         <span>© Все права защищены</span>
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="../PrivacyPolicy.html">
                             <span>Политика конфиденциальности</span>
                         </a>
                     </div>
