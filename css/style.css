@@ -1123,8 +1123,7 @@ header {
 }
 
 .main-oneWrapper {
-  /**/
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
@@ -1133,8 +1132,7 @@ header {
 .main-one-block {
   width: 100%;
   height: 100%;
-  /**/
-  border: 3px solid #0ddc25;
+  /*border: 3px solid #0ddc25;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px;
