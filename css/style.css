@@ -1615,8 +1615,8 @@ section video {
 
 .main-why-block__h2 {
   font-size: var(--sizeh1);
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(201, 57, 177, 0.71)), color-stop(70%, rgba(201, 57, 177, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
-  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(201, 57, 177, 0.71) 30%, rgba(201, 57, 177, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(47, 208, 230, 0.71)), color-stop(70%, rgba(47, 208, 230, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
+  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(47, 208, 230, 0.71) 30%, rgba(47, 208, 230, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2056,8 +2056,8 @@ section video {
 
 .main-scheme-block__h2 {
   font-size: var(--sizeh1);
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(201, 57, 177, 0.71)), color-stop(70%, rgba(201, 57, 177, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
-  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(201, 57, 177, 0.71) 30%, rgba(201, 57, 177, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(47, 208, 230, 0.71)), color-stop(70%, rgba(47, 208, 230, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
+  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(47, 208, 230, 0.71) 30%, rgba(47, 208, 230, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2695,8 +2695,8 @@ footer {
 
 .footer-block__h2 {
   font-size: var(--sizeh1);
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(201, 57, 177, 0.71)), color-stop(70%, rgba(201, 57, 177, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
-  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(201, 57, 177, 0.71) 30%, rgba(201, 57, 177, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(57, 95, 201, 0.71)), color-stop(30%, rgba(47, 208, 230, 0.71)), color-stop(70%, rgba(47, 208, 230, 0.71)), color-stop(80%, rgba(57, 95, 201, 0.71)));
+  background: linear-gradient(to right, rgba(57, 95, 201, 0.71) 20%, rgba(47, 208, 230, 0.71) 30%, rgba(47, 208, 230, 0.71) 70%, rgba(57, 95, 201, 0.71) 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2733,8 +2733,8 @@ footer {
 
 .footer-block1 {
   /*border: 3px solid #dc0d3a;*/
-  width: 68%;
-  padding: 5px;
+  width: 100%;
+  padding: 100px 5px;
   margin: 0;
 }
 
@@ -2750,7 +2750,7 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   /*border: 3px solid #0d33dc;*/
   gap: 30px;
 }
@@ -2765,8 +2765,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /**/
-  border: 3px solid #ba0ddc;
+  /*border: 3px solid #ba0ddc;*/
   background-color: var(--bg3);
   border: 4px solid var(--bg3);
   border-radius: 10px;
