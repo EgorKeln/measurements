@@ -1509,11 +1509,14 @@ section video {
   }
   .main-orientation-block {
     padding: 5px;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
   }
-  .main-orientation-block__h2,
-.main-orientation-block h2 {
+  .main-orientation-block h2 {
+    width: 100%;
     font-size: 45px;
+  }
+  .main-orientation-block__h2 {
+    font-size: 50px;
   }
   .orientation {
     height: 100%;
@@ -1792,14 +1795,15 @@ section video {
   }
   .main-why-block {
     padding: 5px;
-    margin: 60px 0 0 0;
-  }
-  .main-why-block__h2 {
-    font-size: 45px;
+    margin: 50px 0 0 0;
   }
   .main-why-block h2 {
+    width: 100%;
     font-size: 45px;
     margin: 0 0 60px 0;
+  }
+  .main-why-block__h2 {
+    font-size: 50px;
   }
   .why__text2 {
     -webkit-box-ordinal-group: 2;
@@ -2007,11 +2011,14 @@ section video {
   }
   .main-advantages-block {
     padding: 5px;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
   }
-  .main-advantages-block__h2,
-.main-advantages-block h2 {
+  .main-advantages-block h2 {
+    width: 100%;
     font-size: 45px;
+  }
+  .main-advantages-block__h2 {
+    font-size: 50px;
   }
   .advantages {
     height: 100%;
@@ -2296,7 +2303,7 @@ section video {
   }
   .main-scheme-block {
     padding: 5px;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
     gap: 30px;
   }
   .scheme {
@@ -2322,9 +2329,12 @@ section video {
   .scheme-last {
     margin: 0 0 40px 0;
   }
-  .main-scheme-block h2,
-.main-scheme-block__h2 {
-    font-size: 45px;
+  .main-scheme-block h2 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .main-scheme-block__h2 {
+    font-size: 60px;
   }
   .scheme__h2 {
     font-size: 50px;
@@ -2640,10 +2650,12 @@ section video {
 @media (max-width: 913px) {
   .main-pricesWrapper {
     overflow: hidden;
-    padding: 0;
+    padding: 5px;
     margin: 0;
   }
   .main-pricesBig-block {
+    padding: 5px;
+    margin: 50px 0 0 0;
     gap: 40px;
   }
   .main-prices-block {
@@ -2653,6 +2665,15 @@ section video {
   .prices-card {
     width: 320px;
     height: 470px;
+  }
+  .main-pricesBig-block h2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 50px;
+  }
+  .main-pricesBig-block__h2 {
+    font-size: 60px;
   }
 }
 footer {
@@ -3045,12 +3066,12 @@ footer {
 @media (max-width: 913px) {
   .footer-wrapper {
     overflow: hidden;
-    padding: 0;
-    margin: 70px 0 0 0;
+    padding: 5px;
+    margin: 0;
   }
   .footer-wrapper-block {
     padding: 0;
-    margin: 0 0 50px 0;
+    margin: 75px 0;
   }
   .footer-block1 {
     width: 90%;
@@ -3058,9 +3079,14 @@ footer {
     padding: 0;
     margin: 0;
   }
-  .footer-wrapper h2,
-.footer-block__h2 {
-    font-size: 45px;
+  .footer-wrapper h2 {
+    width: 100%;
+    font-size: 50px;
+    padding: 0;
+    margin: 60px 0 0 0;
+  }
+  .footer-block__h2 {
+    font-size: 60px;
   }
   .wrapper-contactForm {
     width: 100%;
