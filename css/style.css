@@ -3063,6 +3063,7 @@ footer {
     font-size: 45px;
   }
   .wrapper-contactForm {
+    width: 100%;
     gap: 10px;
   }
   .contact-block {
