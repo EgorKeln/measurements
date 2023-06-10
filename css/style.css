@@ -1150,7 +1150,7 @@ section video {
      object-fit: cover;
 }
 
-.bg h2 {
+.bg h1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1177,7 +1177,7 @@ section video {
   mix-blend-mode: multiply;
 }
 
-.bg h2 span {
+.bg h1 span {
   font-size: 0.4em;
   line-height: 0.85em;
 }
@@ -1220,12 +1220,12 @@ section video {
     padding: 0;
     margin: 0;
   }
-  .bg h2 {
+  .bg h1 {
     padding: 100px 0 0 0;
     font-size: 20vw;
     line-height: 1.25em;
   }
-  .bg h2 span {
+  .bg h1 span {
     font-size: 0.6em;
     line-height: 1em;
   }
